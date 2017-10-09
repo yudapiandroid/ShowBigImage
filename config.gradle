@@ -1,0 +1,28 @@
+
+def V7_VERSION = '25.0.0'
+def V4_VERSION = '25.0.0'
+
+ext{
+
+    android = [
+            compileSdkVersion : 25,
+            buildToolsVersion : "25.0.0",
+            minSdkVersion     : 15,
+            targetSdkVersion  : 25
+    ]
+
+    dependencies = [
+            v4                   : "com.android.support:support-v4:${V4_VERSION}",
+            //三方库
+            photoView            : "com.bm.photoview:library:1.4.0",
+    ]
+
+    appLibs = [
+
+            dependencies.v4,
+            dependencies.photoView
+
+    ]
+
+
+}
